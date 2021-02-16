@@ -1,5 +1,9 @@
 export function absoluteValuesSumMinimization(a: number[]): number {
-    return 5;
+
+    const isEven = a.length % 2 === 0;
+    const midPoint = isEven ? (a.length / 2) - 1 : Math.floor(a.length / 2);
+
+    return a[midPoint];
 }
 
 // console.log(absoluteValuesSumMinimization([2, 4, 7]));
