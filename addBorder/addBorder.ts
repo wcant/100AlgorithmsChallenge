@@ -1,17 +1,18 @@
 export function addBorder(picture: string[]): string[] {
 
-    const borderLen = picture[0].length;
-    const border = '';
+    const borderLength = picture[0].length + 2;
+    let border = '';
 
-    for (let i = 1; i <= borderLen; i++) {
-        "*".concat(border);
-        console.log(i, border);
+    for (let i = 1; i <= borderLength; i++) {
+        border += '*';
     }
 
-    let arrWithBorder = [...picture];
+    let newPic = picture.map(str => {
+        str = "*" + str + "*";
+        return str;
+    });
 
-
-    console.log(border);
+    return [border, ...newPic, border];
 }
 
 // console.log(addBorder(["abc", "ded"]));
