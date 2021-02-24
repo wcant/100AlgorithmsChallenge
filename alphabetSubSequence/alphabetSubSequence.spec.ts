@@ -1,12 +1,12 @@
-import { alphabetSubsequence } from './alphabetSubsequence';
+import { alphabetSubSequence } from './alphabetSubSequence';
 
-describe(alphabetSubsequence.name, () => {
+describe(alphabetSubSequence.name, () => {
     it('Test 1', () => {
         // arrange
         const data = 'effg';
 
         // act
-        const response = alphabetSubsequence(data);
+        const response = alphabetSubSequence(data);
 
         // assert
         expect(response).toBe(false);
@@ -17,7 +17,7 @@ describe(alphabetSubsequence.name, () => {
         const data = 'ace';
 
         // act
-        const response = alphabetSubsequence(data);
+        const response = alphabetSubSequence(data);
 
         // assert
         expect(response).toBe(true);

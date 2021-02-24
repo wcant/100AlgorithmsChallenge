@@ -1,8 +1,8 @@
-export function alphabetSubsequence(s: string): boolean {
+export function alphabetSubSequence(s: string): boolean {
     const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
     for (let i = 0; i < s.length; i++) {
-
+        console.log(s[i]);
     }
 }
 
