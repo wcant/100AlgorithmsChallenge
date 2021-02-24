@@ -1,4 +1,16 @@
 export function areSimilar(a: number[], b: number[]): boolean {
+    let aStr = a.join('');
+    let bStr = b.join('');
+
+    let newBStr = bStr;
+
+    for (let i = 0; i < a.length; i++) {
+        if (aStr[i] != bStr[i]) {
+            newBStr = newBStr.replace(aStr[i], bStr[i]);
+            newBStr = newBStr.replace(bStr[i], aStr[i]);
+            return aStr === newBStr;
+        } else return true;
+    }
 
 }
 
