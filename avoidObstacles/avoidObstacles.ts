@@ -1,4 +1,5 @@
 export function avoidObstacles(inputArray: number[]): number {
+    console.log(inputArray.sort());
 
 }
 
