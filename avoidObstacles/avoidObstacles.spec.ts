@@ -12,4 +12,16 @@ describe(avoidObstacles.name, () => {
         // assert
         expect(response).toBe(4);
     });
+
+    it('Test 2', () => {
+        // arrange
+        const data = [2, 4, 6, 8, 20];
+
+
+        // act
+        const response = avoidObstacles(data);
+
+        // assert
+        expect(response).toBe(7);
+    });
 });
